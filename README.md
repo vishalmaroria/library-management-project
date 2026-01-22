@@ -590,12 +590,6 @@ viewIssuedBooks(true);
             break
         else:
             print("Invalid choice, try again")
-
-
-# IMPORTANT:
-# yahan direct main() mat call karo jab FastAPI server chalana ho.
-# terminal program run karne ke liye hi call hoga:
-if __name__ == "__main__":
     main()
 
 
