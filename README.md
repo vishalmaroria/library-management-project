@@ -82,7 +82,6 @@ function is login and logout function
     View ...
   </div>
   <script>
-  // Run after DOM is ready
   document.addEventListener("DOMContentLoaded", () => {
     const form = document.getElementById("loginForm");
     const loginBox = document.getElementById("loginBox") || form; // fallback
@@ -94,7 +93,7 @@ function is login and logout function
       return;
     }
 
-    // On page load: keep login state
+  
     if (localStorage.getItem("isLoggedIn") === "1") {
       if (loginBox) loginBox.style.display = "none";
       if (dashboardBox) dashboardBox.style.display = "block";
